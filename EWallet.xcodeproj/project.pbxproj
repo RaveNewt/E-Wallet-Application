@@ -11,6 +11,11 @@
 		0BEDE90D2A4B1F2D001885A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE90C2A4B1F2D001885A1 /* ContentView.swift */; };
 		0BEDE90F2A4B1F2E001885A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BEDE90E2A4B1F2E001885A1 /* Assets.xcassets */; };
 		0BEDE9122A4B1F2E001885A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BEDE9112A4B1F2E001885A1 /* Preview Assets.xcassets */; };
+		0BEDE9212A4B2116001885A1 /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE9202A4B2116001885A1 /* LoginAction.swift */; };
+		0BEDE9242A4B214F001885A1 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE9232A4B214F001885A1 /* LoginRequest.swift */; };
+		0BEDE9272A4B2181001885A1 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE9262A4B2181001885A1 /* LoginResponse.swift */; };
+		0BEDE9292A4B21A8001885A1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE9282A4B21A8001885A1 /* LoginViewModel.swift */; };
+		0BEDE92B2A4B21CB001885A1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE92A2A4B21CB001885A1 /* LoginScreen.swift */; };
 		B7ADEEB7C194E20386C5D5F5 /* Pods_EWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A14C46998385925A14734C9 /* Pods_EWallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +25,11 @@
 		0BEDE90C2A4B1F2D001885A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0BEDE90E2A4B1F2E001885A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BEDE9112A4B1F2E001885A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BEDE9202A4B2116001885A1 /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		0BEDE9232A4B214F001885A1 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		0BEDE9262A4B2181001885A1 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		0BEDE9282A4B21A8001885A1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0BEDE92A2A4B21CB001885A1 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		2A14C46998385925A14734C9 /* Pods_EWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFFBEF967B1862DBF9EA58A /* Pods-EWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWallet.debug.xcconfig"; path = "Target Support Files/Pods-EWallet/Pods-EWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		FD58FB8AF718EBAC4CFC337C /* Pods-EWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWallet.release.xcconfig"; path = "Target Support Files/Pods-EWallet/Pods-EWallet.release.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +68,8 @@
 		0BEDE9092A4B1F2D001885A1 /* EWallet */ = {
 			isa = PBXGroup;
 			children = (
+				0BEDE9192A4B2069001885A1 /* Code */,
+				0BEDE9182A4B205A001885A1 /* Elements */,
 				0BEDE90A2A4B1F2D001885A1 /* EWalletApp.swift */,
 				0BEDE90C2A4B1F2D001885A1 /* ContentView.swift */,
 				0BEDE90E2A4B1F2E001885A1 /* Assets.xcassets */,
@@ -74,13 +86,79 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		0BEDE9182A4B205A001885A1 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		0BEDE9192A4B2069001885A1 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDE91A2A4B2070001885A1 /* Features */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		0BEDE91A2A4B2070001885A1 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDE91B2A4B207A001885A1 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		0BEDE91B2A4B207A001885A1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDE91C2A4B2080001885A1 /* Actions */,
+				0BEDE91D2A4B2088001885A1 /* Models */,
+				0BEDE91F2A4B20A6001885A1 /* Screens */,
+				0BEDE91E2A4B2096001885A1 /* ViewModels */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0BEDE91C2A4B2080001885A1 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDE9202A4B2116001885A1 /* LoginAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		0BEDE91D2A4B2088001885A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDE9232A4B214F001885A1 /* LoginRequest.swift */,
+				0BEDE9262A4B2181001885A1 /* LoginResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BEDE91E2A4B2096001885A1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDE9282A4B21A8001885A1 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0BEDE91F2A4B20A6001885A1 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDE92A2A4B21CB001885A1 /* LoginScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		CB2C635D251E7961D5FABE7D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				5BFFBEF967B1862DBF9EA58A /* Pods-EWallet.debug.xcconfig */,
 				FD58FB8AF718EBAC4CFC337C /* Pods-EWallet.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -190,6 +268,11 @@
 			files = (
 				0BEDE90D2A4B1F2D001885A1 /* ContentView.swift in Sources */,
 				0BEDE90B2A4B1F2D001885A1 /* EWalletApp.swift in Sources */,
+				0BEDE9292A4B21A8001885A1 /* LoginViewModel.swift in Sources */,
+				0BEDE9212A4B2116001885A1 /* LoginAction.swift in Sources */,
+				0BEDE92B2A4B21CB001885A1 /* LoginScreen.swift in Sources */,
+				0BEDE9242A4B214F001885A1 /* LoginRequest.swift in Sources */,
+				0BEDE9272A4B2181001885A1 /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
