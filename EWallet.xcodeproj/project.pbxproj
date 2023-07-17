@@ -16,6 +16,9 @@
 		0BEDE9272A4B2181001885A1 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE9262A4B2181001885A1 /* LoginResponse.swift */; };
 		0BEDE9292A4B21A8001885A1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE9282A4B21A8001885A1 /* LoginViewModel.swift */; };
 		0BEDE92B2A4B21CB001885A1 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE92A2A4B21CB001885A1 /* LoginScreen.swift */; };
+		0BEDE92D2A4B2894001885A1 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE92C2A4B2894001885A1 /* FormField.swift */; };
+		0BEDE9312A4B28D1001885A1 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE9302A4B28D1001885A1 /* CustomButton.swift */; };
+		0BEDE9342A4B28EF001885A1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEDE9332A4B28EF001885A1 /* Colors.swift */; };
 		B7ADEEB7C194E20386C5D5F5 /* Pods_EWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A14C46998385925A14734C9 /* Pods_EWallet.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		0BEDE9262A4B2181001885A1 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		0BEDE9282A4B21A8001885A1 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		0BEDE92A2A4B21CB001885A1 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		0BEDE92C2A4B2894001885A1 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		0BEDE9302A4B28D1001885A1 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0BEDE9332A4B28EF001885A1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2A14C46998385925A14734C9 /* Pods_EWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFFBEF967B1862DBF9EA58A /* Pods-EWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWallet.debug.xcconfig"; path = "Target Support Files/Pods-EWallet/Pods-EWallet.debug.xcconfig"; sourceTree = "<group>"; };
 		FD58FB8AF718EBAC4CFC337C /* Pods-EWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EWallet.release.xcconfig"; path = "Target Support Files/Pods-EWallet/Pods-EWallet.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		0BEDE9092A4B1F2D001885A1 /* EWallet */ = {
 			isa = PBXGroup;
 			children = (
+				0BEDE9322A4B28DC001885A1 /* Theme */,
 				0BEDE9192A4B2069001885A1 /* Code */,
 				0BEDE9182A4B205A001885A1 /* Elements */,
 				0BEDE90A2A4B1F2D001885A1 /* EWalletApp.swift */,
@@ -89,6 +96,8 @@
 		0BEDE9182A4B205A001885A1 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				0BEDE92C2A4B2894001885A1 /* FormField.swift */,
+				0BEDE9302A4B28D1001885A1 /* CustomButton.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -151,6 +160,14 @@
 				0BEDE92A2A4B21CB001885A1 /* LoginScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		0BEDE9322A4B28DC001885A1 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				0BEDE9332A4B28EF001885A1 /* Colors.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 		CB2C635D251E7961D5FABE7D /* Pods */ = {
@@ -267,7 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BEDE90D2A4B1F2D001885A1 /* ContentView.swift in Sources */,
+				0BEDE9342A4B28EF001885A1 /* Colors.swift in Sources */,
 				0BEDE90B2A4B1F2D001885A1 /* EWalletApp.swift in Sources */,
+				0BEDE9312A4B28D1001885A1 /* CustomButton.swift in Sources */,
+				0BEDE92D2A4B2894001885A1 /* FormField.swift in Sources */,
 				0BEDE9292A4B21A8001885A1 /* LoginViewModel.swift in Sources */,
 				0BEDE9212A4B2116001885A1 /* LoginAction.swift in Sources */,
 				0BEDE92B2A4B21CB001885A1 /* LoginScreen.swift in Sources */,

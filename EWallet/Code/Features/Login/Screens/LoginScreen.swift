@@ -8,8 +8,41 @@
 import SwiftUI
 
 struct LoginScreen: View {
+    
+    @ObservedObject var viewModel: LoginViewModel = LoginViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+            Spacer()
+            
+            VStack {
+                TextField(
+                    "Login.UsernameField.Title",
+                    text: $viewModel.username
+                )
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
+                .padding(.top, 20)
+                
+                Divider()
+                
+                SecureField(
+                    "Login.PasswordField.Title",
+                    text: $viewModel.password
+                )
+                .padding(.top, 20)
+                
+                Divider()
+            }
+            
+            Spacer()
+            
+            
+            CustomButton(textButton: "Login", clicked:viewModel.login)
+        }
+        .padding(30)
+        
     }
 }
 
